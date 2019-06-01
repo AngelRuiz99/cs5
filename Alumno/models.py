@@ -1,8 +1,6 @@
-# from django.contrib.auth.models import Profesor
 from django.db import models
 from django.contrib.postgres.fields import JSONField
 from django.conf import settings
-# from django.core.exceptions.
 from django.utils import timezone
 from Profesor.models import Profesor
 
