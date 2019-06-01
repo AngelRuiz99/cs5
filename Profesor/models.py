@@ -9,12 +9,12 @@ from django.utils import timezone
 class Profesor(models.Model):
     address = models.CharField(max_length=250, null= False)
     name =   models.CharField(max_length=100, null=False)
-    ap_pat = models.CharField(max_length=100, null=False)
-    ap_mat = models.CharField(max_length=100, null=False)
+    apellidoPaterno = models.CharField(max_length=100, null=False)
+    apellidoMaterno = models.CharField(max_length=100, null=False)
     telefono = models.IntegerField(null=False) 
     edad = models.IntegerField(null=False)
     sexo = models.CharField(max_length=50, null=False)
-    yearsExperience = models.IntegerField(null=False)
+    aniosExperiencia = models.IntegerField(null=False)
     fechaNacimiento= models.CharField(max_length=100, null=False)
     created = models.DateTimeField(default = timezone.now)
 
